@@ -1,6 +1,6 @@
 # Vite-Project
 
-A web application built with **Laravel** and **Vite**. Laravel handles the application's backend structure and functionality, while Vite provides fast frontend asset development and bundling.
+A frontend web application built with **React** and **Vite**. React is used to build reusable and interactive user interface components, while Vite provides a fast development environment and optimized production builds.
 
 ## 🔗 Live Demo
 
@@ -12,23 +12,20 @@ Live demo coming soon.
 
 ## 🛠️ Technologies Used
 
-- **PHP** – Backend programming language
-- **Laravel** – PHP web application framework
-- **Vite** – Frontend asset development and build tool
-- **JavaScript** – Client-side functionality
+- **React.js** – JavaScript library for building user interfaces
+- **Vite** – Frontend build tool and development server
+- **JavaScript** – Application functionality
 - **HTML5** – Web page structure
 - **CSS3** – Styling and layout
-- **MySQL** – Database management (if configured)
-- **Composer** – PHP dependency management
-- **npm** – Frontend package management
+- **npm** – Package management
 
 ## ✨ Features
 
-- Laravel-based web application structure
-- Organized backend development using Laravel
-- Vite integration for frontend asset management
-- Fast frontend development workflow
-- Development and production asset builds
+- React-based frontend application
+- Component-based user interface development
+- Fast development environment powered by Vite
+- Modern JavaScript development
+- Optimized production build
 
 ## 🚀 Getting Started
 
@@ -38,8 +35,6 @@ Follow these steps to run the project locally.
 
 Make sure you have installed:
 
-- [PHP](https://www.php.net/)
-- [Composer](https://getcomposer.org/)
 - [Node.js](https://nodejs.org/) (LTS recommended)
 - npm (included with Node.js)
 - [Git](https://git-scm.com/)
@@ -58,106 +53,60 @@ git clone https://github.com/htet-nandar-winn/Vite-Project.git
 cd Vite-Project
 ```
 
-**3. Install PHP dependencies**
-
-```bash
-composer install
-```
-
-**4. Install frontend dependencies**
+**3. Install dependencies**
 
 ```bash
 npm install
 ```
 
-**5. Create your environment file**
-
-```bash
-cp .env.example .env
-```
-
-On Windows PowerShell, you can use:
-
-```powershell
-Copy-Item .env.example .env
-```
-
-**6. Generate the application key**
-
-```bash
-php artisan key:generate
-```
-
-**7. Configure your database**
-
-Update the database settings in your `.env` file if the project uses a database.
-
-If migrations are required, run:
-
-```bash
-php artisan migrate
-```
-
-**8. Start the development servers**
-
-Run Laravel:
-
-```bash
-php artisan serve
-```
-
-In another terminal, run Vite:
+**4. Start the development server**
 
 ```bash
 npm run dev
 ```
 
-Open the Laravel URL displayed in your terminal, usually:
+**5. Open the application**
+
+Visit the local URL displayed in your terminal, usually:
 
 ```text
-http://127.0.0.1:8000
+http://localhost:5173/
 ```
 
 ## 📦 Build for Production
 
-To build frontend assets for production, run:
+To create an optimized production build, run:
 
 ```bash
 npm run build
 ```
 
-Vite will generate optimized assets in the configured build directory, typically `public/build`.
+## 🔍 Preview Production Build
 
-## 🧹 Code Quality
+To preview the production build locally, run:
 
-If the project includes configured code-quality scripts, run the relevant commands from `package.json` or `composer.json`.
+```bash
+npm run preview
+```
 
 ## 📁 Project Structure
 
 ```text
 Vite-Project/
-├── app/                # Application logic
-├── bootstrap/          # Framework bootstrapping
-├── config/             # Configuration files
-├── database/           # Migrations and seeders
-├── public/             # Public assets
-├── resources/          # Views, CSS, and JavaScript
-├── routes/             # Application routes
-├── storage/            # Application storage
-├── tests/              # Automated tests
-├── vendor/             # Composer dependencies
-├── node_modules/       # npm dependencies
-├── package.json        # Frontend dependencies and scripts
+├── public/             # Static assets
+├── src/                # React application source code
+│   ├── assets/         # Images and other assets
+│   ├── App.jsx         # Main React component
+│   ├── App.css         # Application styles
+│   ├── index.css       # Global styles
+│   └── main.jsx        # Application entry point
+├── index.html          # Main HTML file
+├── package.json        # Project dependencies and scripts
 ├── vite.config.js      # Vite configuration
-├── composer.json       # PHP dependencies
 └── README.md           # Project documentation
 ```
 
-## 🔐 Environment Variables
-
-Store local environment settings in the `.env` file.
-
-**Important:** Never commit API keys, passwords, database credentials, or other sensitive information to GitHub. Make sure `.env` is excluded through `.gitignore`.
+*Note: The folder and file structure above is a typical React + Vite structure. Adjust it if your actual project differs.*
 
 ## 👩‍💻 Author
 
