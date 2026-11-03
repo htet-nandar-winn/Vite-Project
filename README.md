@@ -112,7 +112,7 @@ Vite-Project/
 
 **HTET NANDAR WINN**
 
-- GitHub: [@htet-nandar-winn](https://github.com/htet-nandar-winn)
+- GitHub: - **GitHub Profile:** [Htet Nandar Winn](https://github.com/htet-nandar-winn)
 - Portfolio: [Visit My Portfolio](https://htet-nandar-winn.github.io/my-portfolio/)
 
 ## 📄 License
